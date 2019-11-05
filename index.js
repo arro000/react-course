@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
+import User from "./User.js"
 
 class App extends Component {
-  constructor() {
+   constructor() {
+
     super();
+    this.user = new User("asd","asd","asd","asd","asd");
     this.state = {
       name: 'React'
     };

@@ -1,5 +1,3 @@
-
-
 class User 
 {
   constructor(userName,password,firstName,lastName,email)
@@ -11,7 +9,12 @@ class User
     this.email= email;
   }
 
-  toDbString(){
+  get name(){
+    return this.name;
+  }
+
+  toDbString()
+  {
     return ("username=${this.userName};"+
             "password=${this.password};"+
             "firstName=${this.firstName};"+
