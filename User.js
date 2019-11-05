@@ -13,6 +13,8 @@ class User
     return this.name;
   }
 
+  static dammiListanza(){return new User()}
+
   toDbString()
   {
     return ("username=${this.userName};"+
